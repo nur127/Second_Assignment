@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Shared Styles */
+
+.inter-family{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .common-bg{
+    background-color: black;
+  }
+  .white-color{
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .share-font{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .display-flex{
+    display: flex;
+  }
+  .btn-primary{
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: rgb(230, 83, 60);
+    border-radius: 42px;
+    padding: 24px;
+  }
+
+  main{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  /* Identical Styles */
+
+  /* Header */
+
+  /* nav styles */
+
+  .navbar,.banner{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-items{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 10px;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 47px;
+    
+  }
+  .link-item{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .brand{
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+  #home{
+    background-color: rgb(230, 83, 60);
+    width: auto;
+    border-radius: 46px;
+    font-weight: 600;
+    padding: 8px;
+    width: auto;
+  }
+
+  /* Banner */
+  .banner{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-content{
+    max-width: 520px;
+  }
+  .banner-title{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 27px;
+  }
+ #shape{
+    font-size: 5rem;
+    font-weight: 400;
+    
+ }
+
+  .banner-discription{
+    margin-bottom: 28px;
+  }
+  .Download{
+    background-color:black ;
+    border: 1px solid white;
+  }
+  
+  .banner-image > img{
+    width: 100%;
+  }
+
+  #Work-out-button{
+    margin-bottom: -800px;
+    margin-right: -300px;
+    backdrop-filter: blur(5px);
+    position:absolute;
+  }
+  
+  #Work-out-button , #Tutorial-button {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding:8px 32px;
+  }
+  .Work-out-button-header{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 8px;
+  }
+  .Workout-description , .Tutorial-description{
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  #Tutorial-button{
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -200px;
+    margin-left: -100px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+  }
+  .ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+  }
+
+  .Tutorial-button-header{
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+
+  @media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    #Tutorial-button{
+        margin-top:-350px ;
+        margin-left: 00px;
+       
+      
+    }
+
+    
+  }
+  
