@@ -97,6 +97,7 @@
   .banner{
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
   .banner-content{
     max-width: 520px;
@@ -125,8 +126,8 @@
   }
 
   #Work-out-button{
-    margin-bottom: -800px;
-    margin-right: -300px;
+    margin-top:100px;
+    margin-left: 0px;
     backdrop-filter: blur(5px);
     position:absolute;
   }
@@ -167,11 +168,46 @@
     font-size: 1.5rem;
     font-weight: 900;
   }
+  /* Habit section */
+
+  .habits{
+    padding: 12px;
+  }
+
+  .habit-container{
+    max-width: 671px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .habit-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  .card-container{
+    gap: 40px;
+    align-items: center;
+  }
+  .card{
+    max-width: 231px;
+    text-align: center;
+  }
+  .habit-card-image-container{
+    max-width: 232px;
+    margin-top: 20px;
+  }
+  
+   .habit-card-image-container > img{
+    width: 100%;
+    border-radius: 50%;
+  }
 
 
+  /* Media Section */
   @media screen and (max-width:576px) {
     .banner{
         flex-direction: column;
+        text-align: center;
     }
     .navbar{
         flex-direction: column;
@@ -179,8 +215,9 @@
     #Tutorial-button{
         margin-top:-350px ;
         margin-left: 00px;
-       
-      
+    }
+    .card-container{
+        flex-direction: column;
     }
 
     
