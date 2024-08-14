@@ -36,8 +36,10 @@
     font-size: 1.125rem;
     font-weight: 600;
     background-color: rgb(230, 83, 60);
+    border: none;
     border-radius: 42px;
     padding: 24px;
+    width: 200px;
   }
 
   main{
@@ -172,6 +174,7 @@
 
   .habits{
     padding: 12px;
+    margin-bottom: 30px;
   }
 
   .habit-container{
@@ -202,6 +205,31 @@
     border-radius: 50%;
   }
 
+  /* Run Section */
+  .Extra-Run{
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 167px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+  }
+  .extra-run-description-container{
+    max-width: 443px;
+    text-align: justify;
+  }
+.extra-run-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.Extra-Run-img-container  {
+    width: 50%;
+}
+.Extra-Run-img-container img{
+    width: 100%;
+    border-radius: 18px;
+}
 
   /* Media Section */
   @media screen and (max-width:576px) {
@@ -219,7 +247,18 @@
     .card-container{
         flex-direction: column;
     }
-
-    
-  }
+    .Extra-Run{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Extra-Run .btn-primary{
+        width: 90%;
+    }
+    .Extra-Run-img-container{
+        width: 90%;
+    }
+    .Extra-Run-img-container img{
+        width: 100%;
+    }
+}
   
