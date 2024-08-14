@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Gym Website</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/2841dbd9dd.js" crossorigin="anonymous"></script>
 </head>
 <body class="common-bg inter-family" >
     <header class="header">
         <section id="header-section">
             <nav class="navbar">
                 <h2 class="brand"><em>Fitness</em></h2>
+                <div class="menu"><i class="fa-solid fa-bars white-color" ></i></div>
+                
                 <ul class="nav-items">
 
                     <li class="nav-item ">
@@ -102,63 +105,65 @@
 
         </section>
 
-        <!-- <section class="BMI-Calculator">
-            <div class="bmi-calculator-header">
-                <h1 class="bmi-calculator-title white-color">BMI Calculator</h1>
-                <p class="bmi-calculator-description share-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+         <section class="bmi-primary">
+            <h1 class="bmi-title white-color">BMI Calculator</h1>
+            <p class="bmi-description share-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+         </section>
+         <section class="bmi-details">
+            <div class="bmi-table-chart">
+                <h1 class="white-color bmi-table-title">BMI Calculator Chart</h1>
+                <table border="1" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <th class="white-color">BMI</th>
+                        <th class="white-color">Weight Status</th>
+                    </tr>
+                    <tr>
+                        <td class="share-font">Below 18.5</td>
+                        <td class="share-font">Underweight</td>
+                    </tr>
+                    <tr>
+                        <td class="share-font">18.5 - 24.9</td>
+                        <td class="share-font">Healthy</td>
+                    </tr>
+                    <tr>
+                        <td class="share-font">25.0 - 29.9</td>
+                        <td class="share-font">Overweight</td>
+                    </tr>
+                    <tr>
+                        <td class="share-font">30.0 - and Above</td>
+                        <td class="share-font">Obese</td>
+                    </tr>
+                </table>
             </div>
 
-                <div class="bmi-details-information display-flex">
-                    <div class="bmi-calculator-chart">
-                        <h1 class="bmi-chart-title white-color">BMI Calculator Chart</h1>
-                        <table border="1" cellspacing="0" cellpadding="20">
-                            <tr>
-                                <th class="white-color" >BMI</th>
-                                <th class="white-color">Weight Status</th>
-                            </tr>
-                            <tr>
-                                <td class="share-font">Below 18.5</td>
-                                <td class="share-font">Underweight</td>
-                            </tr>
-                            <tr>
-                                <td class="share-font">18.5 - 24.9</td>
-                                <td class="share-font">Healthy</td>
-                            </tr>
-                            <tr>
-                                <td class="share-font">25.0 - 29.9</td>
-                                <td class="share-font">Overweight</td>
-                            </tr>
-                            <tr>
-                                <td class="share-font">30.0 - and Above</td>
-                                <td class="share-font">Obese</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="bmi-form">
-                        <h1 class="bmi-form-title white-color">Calculate your BMI</h1>
-                        <p class="bmi-form-description share-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
-                        <form>
-                            <input class="share-font" type="text" placeholder="Height/cm">
-                            <input class="share-font" type="text" placeholder="Weight/cm">
-                            <input class="share-font" type="text" placeholder="Age">
-                            <select class="share-font" name="sex" id="Sex" >
-                                <option class="share-font" value="0">Sex</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
-                            </select>
-                            <select class="share-font" name="car" id="car" >
-                                <option value="0">Select a car</option>
-                                <option value="1">Audi</option>
-                                <option value="2">BMW</option>
-                                <option value="3">Honda</option>
-                                <option value="4">Toyota</option>
-                                <option value="5">Mercedes</option>
-                            </select>
-                        </form>
-                        <button class="btn-primary white-color">Calculate</button>
-                    </div>
-                </div>
-        </section> -->
+            <div class="bmi-form">
+                <h1 class="white-color bmi-form-title">Calculate your BMI</h1>
+                <p class="description share-font" >We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                <form>
+                    <div><input type="text" placeholder="Height/cm" class="share-font"></div>
+                    <div><input type="text" placeholder="Weight/kg" class="share-font"></div>
+                    <div><input type="text" placeholder="Age" class="share-font"></div>
+
+                    <select name="" id="" class="share-font">
+                        <option value="0">Sex</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+
+                    <select name="" id="" class="share-font second">
+                        <option value="0">Select an activity Factor</option>
+                        <option value="1">Walking</option>
+                        <option value="2">Exercise</option>
+                    </select>
+                    
+                </form>
+
+            </div>
+        
+
+         </section>
+
+        
         <section class="team">
             <div class="team-description-container">
                 <h1 class="team-title white-color">Meet Our Team</h1>
@@ -210,10 +215,41 @@
 
         </section>
 
-
     </main>
 
     <footer>
+        <section class="footer-content">
+            <div class="footer">
+                <div class="my-brand">
+                    <h1 class="brand"><i>Fitness</i></h1>
+                    <p class="brand-description share-font">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                </div>
+                <div class="contrac-list">
+                    <h1 class="Contract-list-title white-color">Get Started</h1>
+                    <ul class="items">
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Services</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Contract Us</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Affiliate Program</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">About Us</a></li>
+    
+                    </ul>
+                </div>
+    
+                <div class="contrac-list">
+                    <h1 class="Contract-list-title white-color">Get Started</h1>
+                    <ul class="items">
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Fitness</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Platform</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">Workout Libary</a></li>
+                        <li class="nav-item"> <a href="#" class="link-item share-font">App Design</a></li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+            <hr>
+            <p class="copyright share-font">All right reserved @Fitness 2024</p>
+        </section>
 
     </footer>
     
