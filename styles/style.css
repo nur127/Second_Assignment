@@ -38,8 +38,8 @@
     background-color: rgb(230, 83, 60);
     border: none;
     border-radius: 42px;
-    padding: 24px;
-    width: 200px;
+    padding: 16px;
+    width: 150px;
   }
 
   main{
@@ -52,6 +52,12 @@
   /* Header */
 
   /* nav styles */
+
+  header{
+    background-color: rgb(17, 17, 17);
+    padding: 10px;
+    border-radius: 12px;
+  }
 
   .navbar,.banner{
     max-width: 1060px;
@@ -248,6 +254,13 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 5px;
+  background-color: rgb(34, 34, 34);
+  padding: 10px;
+  border-radius: 18px;
+  max-width: 1040px;
+}
+.bmi-form{
+  margin-left: 2px;
 }
 
 form{
@@ -265,8 +278,12 @@ input,select{
   background-color: rgba(255, 255, 255, 0.1);
   padding: 2px;
   border: none;
+  border-radius: 18px;
 }
 
+select{
+  margin-right: 10px;
+}
 
 
 /* Team */
@@ -288,6 +305,9 @@ input,select{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
+    background-color:rgb(34, 34, 34); 
+    padding: 10px;
+    border-radius: 18px;
 
 }
 .team-image-container img{
@@ -387,6 +407,7 @@ hr{
         grid-template-columns: repeat(1,1fr);
         gap: 3px;
         max-width: 20px;
+        align-items: center;
     }
 
     /* Team */
